@@ -3,7 +3,7 @@
 <head>
     <title>"My JS Drumkit</title>
     <meta charset="utf-8">
-    <!--<meta name="viewport" content="width=device-width" , initial-scale=1">-->
+    <meta name="viewport" content="width=device-width , initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:;base64,=">
 </head>
@@ -11,15 +11,8 @@
         <header>
             <h1>PEW PEW PEW</h1>
         </header>
-         <div class ="radio">
-             <input type="radio" id="kitA" name="drumkit" value="A" checked>
-             <label for="kitChoice1">Kit A</label>
-             <input type="radio" id="kitB" name="drumkit" value="B">
-             <label for="kitChoice2">Kit B</label>
-             <input type="radio" id="kitC" name="drumkit" value="C">
-             <label for="kitChoice3">Kit C</label>
-        </div>
-        <div class="keys">
+        <div>
+            <div class="keys">
             <div data-key="a" class="drumpad"><kbd>A</kbd><span="inst">CLAP</span></div>
             <div data-key="s" class="drumpad"><kbd>S</kbd><span="inst">HIHAT</span></div>
             <div data-key="d" class="drumpad"><kbd>D</kbd><span="inst">KICK</span></div>
@@ -30,6 +23,7 @@
             <div data-key="k" class="drumpad"><kbd>K</kbd><span="inst">TOM</span></div>
             <div data-key="l" class="drumpad"><kbd>L</kbd><span="inst">PLINK</span></div>
         </div>
+        
         <audio data-key="a" src='sounds/kitA/clap.wav'></audio>
         <audio data-key="s" src='sounds/kitA/hihat.wav'></audio>
         <audio data-key="d" src='sounds/kitA/kick.wav'></audio>
@@ -40,6 +34,18 @@
         <audio data-key="k" src='sounds/kitA/tom.wav'></audio>
         <audio data-key="l" src='sounds/kitA/tink.wav'></audio>
         
+        <div class ="radio">
+            <label for="kitChoice1">Kit A<br />
+                <input type="radio" id="kitA" name="drumkit" value="A" checked>
+            </label>
+            <label for="kitChoice2">Kit B<br />
+                <input type="radio" id="kitB" name="drumkit" value="B">
+            </label>
+            <label for="kitChoice3">Kit C<br />
+             <input type="radio" id="kitC" name="drumkit" value="C">
+            </label>
+        </div>
+
         <script src="script.js"></script>
     </body> 
 

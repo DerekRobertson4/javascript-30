@@ -27,7 +27,7 @@ radioButtons.forEach(elem => {
             const originalPath = elem.getAttribute('src');
             const newPath = originalPath
             .replace(/kit[A-Z]/, `kit${currVal}`);
-            console.log(newPath);
+            elem.setAttribute('src', newPath);
         })
     })
 });
