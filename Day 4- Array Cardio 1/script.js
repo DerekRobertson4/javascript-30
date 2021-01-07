@@ -1,4 +1,4 @@
-console.log('You found the secret! Please enjoy this list of random array method exercises as your reward.')
+console.log('You found the secret! Please enjoy this list of random array method exercises as your reward.');
 const inventors = [
     { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
     { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
@@ -38,7 +38,7 @@ console.table(fullNames);
   // 3. Sort the inventors by birthdate, oldest to youngest
   console.log('Inventors sorted by birthdate (oldest to youngest):');
   const birthdays = inventors.sort((a,b) => a.year > b.year ?  1 : -1);
-console.table(birthdays)
+console.table(birthdays);
   
 // Array.prototype.reduce()
   // 4. How many years did all the inventors live all together?
@@ -46,7 +46,7 @@ console.table(birthdays)
   const totalYears = inventors.reduce((total, inv) => {
   return total + (inv.passed - inv.year);
 }, 0);
-console.log(totalYears);
+console.table(totalYears);
   
 // 5. Sort the inventors by years lived
 console.log('Array sorted by years lived by inventors:');
@@ -55,7 +55,7 @@ const oldest = inventors.sort((a, b) => {
     const newGuy = b.passed - b.year;
     return lastGuy > newGuy ? -1 : 1;
 });
-console.table(oldest)
+console.log(oldest);
   
 /*
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
@@ -75,7 +75,7 @@ console.log('List of strings sorted by last name:');
   const [bLast, bFirst] = nextOne.split(', ');
   return aLast > bLast ? 1 : -1;
 });
-console.table(alpha)
+console.table(alpha);
 
 // 8. Reduce Exercise
   // Sum up the instances of each of these
@@ -88,4 +88,4 @@ const tally = data.reduce((obj, item) => {
   obj[item]++;
   return obj
 }, {});
-console.log(tally)
+console.table(tally);
